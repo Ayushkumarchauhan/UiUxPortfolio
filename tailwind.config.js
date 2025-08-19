@@ -3,7 +3,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-	content: ["./src/**/*.{html,js,php}"],
+	// content: ["./src/**/*.{html,js,php}"],
+	content: [
+		"./src/**/*.{html,js,php}",
+		"./build/**/*.{html,js,php}",
+		"./dist/**/*.{html,js,php}"
+	],
 	darkMode: "class",
 	theme: {
 		container: {
@@ -17,17 +22,17 @@ module.exports = {
 			fontFamily: {
 				sans: ['"Bricolage Grotesque"', ...defaultTheme.fontFamily.sans],
 			},
-		colors: {
-  			primary: "#FFD742",    // Brand Yellow
-		secondary: "#4F46E5",  // indigo
-		accent: "#E11D48",     // red/pink
-		success: "#22C55E",    // green
-		warning: "#FACC15",    // yellow
-		dark: "#1A1F2C",
-		"dark-2": "#0E1018",
-		light: "#F0F2F5",
-		muted: "#576076",
-		},
+			colors: {
+				primary: "#FFD742",    // Brand Yellow
+				secondary: "#4F46E5",  // indigo
+				accent: "#E11D48",     // red/pink
+				success: "#22C55E",    // green
+				warning: "#FACC15",    // yellow
+				dark: "#1A1F2C",
+				"dark-2": "#0E1018",
+				light: "#F0F2F5",
+				muted: "#576076",
+			},
 			aspectRatio: {
 				"6/4": "6 / 4",
 			},
@@ -39,7 +44,7 @@ module.exports = {
 				'spin-very-slow': 'spin 90s linear infinite',
 			},
 
-			keyframes: { 
+			keyframes: {
 				scroll: {
 					from: { transform: "translateX(0)" },
 					to: { transform: "translateX(calc(-100% - 1.5rem))" },
