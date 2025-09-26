@@ -50,7 +50,7 @@ const paths = {
 	},
 
 	img: {
-		src: `./${srcPathName}/img/**/*.{jpg,jpeg,png,svg}`,
+		src: `./${srcPathName}/assets/img/**/*.{jpg,jpeg,png,svg}`,
 		dest: `./${buildPathName}/assets/img`,
 		destProd: `./${distPathName}/assets/img`,
 	},
