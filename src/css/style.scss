@@ -1,2 +1,62 @@
 @import "./tailwind";
 @import "./main";
+
+
+/* ================================
+   HS Select – Mobile Smooth Animation
+================================ */
+
+.hs-select-dropdown {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+  overflow: hidden;
+
+  transition: opacity 0.25s ease,
+              transform 0.25s ease,
+              max-height 0.3s ease;
+}
+
+.hs-select-open .hs-select-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 320px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .hs-select-dropdown {
+    transition: opacity 0.3s ease,
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                max-height 0.35s ease;
+  }
+}
+
+/* Touch feedback */
+.hs-select-dropdown [role="option"] {
+  transition: background-color 0.2s ease,
+              transform 0.15s ease;
+}
+
+.hs-select-dropdown [role="option"]:active {
+  transform: scale(0.97);
+}
+
+/* ================================
+   Profile card hand wave animation
+================================ */
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+.animate-wave {
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+

@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Title -->
-    <title>AyushChauhan - Portfolio Ui Ux Designer</title>
+    <title>Ayush Chauhan - UI/UX Designer & Frontend Developer | Portfolio</title>
+    <meta name="description" content="Ayush Chauhan's portfolio showcasing UI/UX design projects 
+    and frontend development work. Specializing in web design, Figma, and modern web technologies.">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/Favicon.svg" type="image/svg+xml">
@@ -22,46 +24,43 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/venobox.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+    <!-- ✅ FIXED: Added defer attribute -->
+    <script defer src="https://unpkg.com/preline/dist/preline.js"></script>
+    <script defer src="assets/js/custom.js"></script>
 </head>
 
 
 <body class="relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light">
     <div class="mx-auto flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
         <!-- Header -->
-        <header class="sticky top-0 z-50">
+        <header class="sticky top-0 z-40 transition-all duration-300" role="banner">
             <div class="">
-                <div class="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark">
+                <nav aria-label="Main navigation" class="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark">
+
                     <!-- Logo -->
-                    <a href="index.html" class="inline-flex items-center gap-3 px-3 text-3xl font-semibold text-dark dark:text-white">
-                        <!-- <svg
-								xmlns="assets/img/favicon.svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					class="h-6 w-6">
-					<path
-						fill="currentColor"
-						d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
-				</svg> -->
-
-                        <img src="/assets/img/favicon.svg" class="w-10 h-auto md:w-12" />
-
-                        <p class="text-2xl md:text-3xl font-bold"> Ayush<span class="text-primary">Chauhan</span> </p>
+                    <a href="index.html" class="inline-flex items-center gap-3 px-3 text-3xl font-semibold text-dark dark:text-white" aria-label="Ayush Chauhan - Home">
+                        <img src="/assets/img/favicon.svg" alt="Ayush Chauhan Logo" class="h-10 w-10 md:h-12 md:w-12" width="48" height="48" />
+                        <p class="text-2xl md:text-3xl font-bold">
+                            Ayush<span class="text-primary">Chauhan</span>
+                        </p>
                     </a>
 
-                    <!-- Navigation menu -->
-                    <ul class="hidden flex-1 flex-wrap items-center justify-center lg:flex">
-                        <li class="group/menu-item active">
-                            <a href="index.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                    <!-- Desktop Navigation - Better Spacing with Original Font Size -->
+                    <ul class="hidden flex-1 flex-wrap items-center justify-center gap-1 lg:flex" role="menubar">
+                        <li class="group/menu-item active" role="none">
+                            <a href="index.html" role="menuitem" class="group inline-flex items-center gap-1 rounded-lg px-3 py-2.5 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white dark:focus:ring-offset-black" aria-current="page">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white" aria-hidden="true">
                                     <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
                                     <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
                                 </svg>
                                 <span>Home</span>
                             </a>
                         </li>
-                        <li class="group/menu-item ">
-                            <a href="about.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+
+                        <li class="group/menu-item " role="none">
+                            <a href="about.html" role="menuitem" class="group inline-flex items-center gap-1 rounded-lg px-3 py-2.5 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white dark:focus:ring-offset-black" aria-current="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white" aria-hidden="true">
                                     <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
                                     <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />
                                     <path d="M5.5 16.708v-.041a3.333 3.333 0 0 1 3.333-3.334h3.334a3.333 3.333 0 0 1 3.333 3.334v.041" />
@@ -69,44 +68,28 @@
                                 <span>About</span>
                             </a>
                         </li>
-                        <!-- <li class="group/menu-item ">
-					<a
-						href="services.html"
-						class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="1.2"
-							class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-							<path
-								d="M10.5 3.333 3.833 6.667 10.5 10l6.667-3.333L10.5 3.333ZM3.833 10l6.667 3.333L17.167 10M3.833 13.333l6.667 3.334 6.667-3.334" />
-						</svg>
-						<span>Services</span>
-					</a>
-				</li> -->
-                        <li class="group/menu-item ">
-                            <a href="portfolio.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+
+                        <li class="group/menu-item " role="none">
+                            <a href="portfolio.html" role="menuitem" class="group inline-flex items-center gap-1 rounded-lg px-3 py-2.5 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white dark:focus:ring-offset-black" aria-current="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white" aria-hidden="true">
                                     <path d="m3.503 5.998 5.949-2.591a.8.8 0 0 1 1.058.439l4.103 9.918a.834.834 0 0 1-.428 1.087l-5.948 2.59a.8.8 0 0 1-1.059-.438l-4.103-9.92a.833.833 0 0 1 .428-1.085ZM13 3.333h.833a.833.833 0 0 1 .834.834v2.916M17.167 5c.22.093.433.18.64.263a.833.833 0 0 1 .442 1.092l-1.915 4.478" />
                                 </svg>
                                 <span>My Work</span>
                             </a>
                         </li>
-                        <li class="group/menu-item ">
-                            <a href="blog.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+
+                        <li class="group/menu-item " role="none">
+                            <a href="blog.html" role="menuitem" class="group inline-flex items-center gap-1 rounded-lg px-3 py-2.5 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white dark:focus:ring-offset-black" aria-current="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white" aria-hidden="true">
                                     <path d="m14.667 9.167 1.25-1.25a2.357 2.357 0 1 0-3.333-3.334l-8.75 8.75v3.334h3.333L8.834 15m2.916-9.583 3.333 3.333m.417 9.583 2.792-2.736a1.785 1.785 0 0 0 .004-2.56 1.87 1.87 0 0 0-2.608-.005l-.186.184-.186-.184a1.869 1.869 0 0 0-2.607-.005 1.787 1.787 0 0 0-.005 2.56l2.796 2.746Z" />
                                 </svg>
                                 <span>Blog</span>
                             </a>
                         </li>
-                        <li class="group/menu-item ">
-                            <a href="contact.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+
+                        <li class="group/menu-item " role="none">
+                            <a href="contact.html" role="menuitem" class="group inline-flex items-center gap-1 rounded-lg px-3 py-2.5 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white dark:focus:ring-offset-black" aria-current="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white" aria-hidden="true">
                                     <path d="M6.667 7.5h6.666m-6.666 3.333h5M15 3.333a2.5 2.5 0 0 1 2.5 2.5V12.5A2.5 2.5 0 0 1 15 15h-4.167l-4.166 2.5V15H5a2.5 2.5 0 0 1-2.5-2.5V5.833a2.5 2.5 0 0 1 2.5-2.5h10Z" />
                                 </svg>
                                 <span>Contact</span>
@@ -114,142 +97,161 @@
                         </li>
                     </ul>
 
-                    <!-- Header buttons -->
+
+
+                    <!-- Header Actions -->
                     <div class="hidden items-center gap-4 lg:flex">
-                        <!-- Theme appearance toggler -->
+                        <!-- Theme Toggle -->
                         <div class="">
-                            <button type="button" class="hs-dark-mode group flex h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:hidden dark:text-gray-400 dark:hover:text-gray-500" data-hs-theme-click-value="dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                            <button type="button" class="hs-dark-mode group flex h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hs-dark-mode-active:hidden dark:text-gray-400 dark:hover:text-gray-500 dark:focus:ring-offset-black" data-hs-theme-click-value="dark" aria-label="Switch to dark mode">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true">
                                     <path d="M11.8 3a8.656 8.656 0 0 0-4.523 1.28A8.918 8.918 0 0 0 4.04 7.756a9.167 9.167 0 0 0 .44 9.24 8.863 8.863 0 0 0 3.553 3.137 8.633 8.633 0 0 0 4.624.824 8.69 8.69 0 0 0 4.381-1.723 8.973 8.973 0 0 0 2.892-3.78c.3-.738-.419-1.48-1.142-1.179a5.604 5.604 0 0 1-3.892.15 5.74 5.74 0 0 1-3.083-2.431 5.956 5.956 0 0 1-.848-3.886c.17-1.357.8-2.61 1.78-3.541l.069-.072c.485-.567.099-1.488-.668-1.488h-.234l-.06-.005L11.8 3Z" />
                                 </svg>
                             </button>
-                            <button type="button" class="hs-dark-mode group hidden h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:flex dark:text-[#FD7E41] dark:hover:bg-dark dark:hover:text-[#FD7E41]" data-hs-theme-click-value="light">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6">
+                            <button type="button" class="hs-dark-mode group hidden h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hs-dark-mode-active:flex dark:text-[#FD7E41] dark:hover:bg-dark dark:hover:text-[#FD7E41] dark:focus:ring-offset-black" data-hs-theme-click-value="light" aria-label="Switch to light mode">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6" aria-hidden="true">
                                     <path d="M10 15.833a.833.833 0 0 1 .828.736l.005.098v.833a.833.833 0 0 1-1.66.097l-.006-.097v-.833a.833.833 0 0 1 .833-.834Zm5.26-1.741.08.069.582.583a.833.833 0 0 1-1.1 1.248l-.078-.07-.583-.583a.833.833 0 0 1 1.015-1.306l.085.059Zm-9.42.068a.833.833 0 0 1 .068 1.1l-.069.08-.583.582a.833.833 0 0 1-1.248-1.1l.07-.078.583-.583a.833.833 0 0 1 1.178 0ZM3.333 9.167a.833.833 0 0 1 .098 1.66l-.098.006H2.5a.833.833 0 0 1-.098-1.66l.098-.006h.833Zm14.167 0a.833.833 0 0 1 .098 1.66l-.098.006h-.833a.833.833 0 0 1-.098-1.66l.098-.006h.833ZM5.178 4.008l.078.07.583.583a.833.833 0 0 1-1.1 1.247l-.078-.069-.583-.583A.833.833 0 0 1 5.092 3.95l.086.058Zm10.744.069a.833.833 0 0 1 .07 1.1l-.07.079-.583.583a.833.833 0 0 1-1.247-1.1l.069-.078.583-.584a.833.833 0 0 1 1.178 0ZM10 1.667a.833.833 0 0 1 .828.736l.005.097v.833a.833.833 0 0 1-1.66.098l-.006-.098V2.5A.833.833 0 0 1 10 1.667Zm0 4.166a4.167 4.167 0 1 1-4.163 4.348L5.833 10l.004-.18A4.167 4.167 0 0 1 10 5.832Z" />
                                 </svg>
                             </button>
                         </div>
 
-                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
+                        <!-- CTA Button - Original Style with Icon Animation -->
+                        <a href="contact.html" class="group inline-flex items-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
                             <span>Let's Talk</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true">
                                 <path d="M17.5 11.667v-5h-5" />
                                 <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
                             </svg>
                         </a>
                     </div>
 
-                    <!-- Navigation toggler -->
-                    <button type="button" class="text-dark transition dark:text-white/70 lg:hidden" data-hs-overlay="#mobile-menu" aria-controls="mobile-menu" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <svg class="h-9 w-9 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16">
+                    <!-- Mobile Menu Toggle -->
+                    <button type="button" class="text-dark transition hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-black lg:hidden" data-hs-overlay="#mobile-menu" aria-controls="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <svg class="h-9 w-9 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </button>
-                </div>
+                </nav>
             </div>
         </header>
         <!-- Header end -->
 
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hs-overlay fixed bottom-0 start-0 top-0 z-[60] hidden h-full w-64 -translate-x-full transform overflow-y-auto bg-white transition-all duration-300 hs-overlay-open:translate-x-0 dark:bg-black [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar]:w-2">
-            <div class="flex h-full flex-col justify-between gap-5 p-5">
-                <div class="">
-                    <!-- Logo -->
-                    <a href="index.html" class="inline-flex items-center gap-3 px-3 text-2xl font-semibold text-dark dark:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6">
-                            <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
-                        </svg>
 
-                        <span> Ayush<span class="text-primary">Chauhan</span> </span>
+        <!-- Mobile Menu - Final Enhanced UI -->
+        <div id="mobile-menu" class="hs-overlay fixed bottom-0 end-0 top-0 z-[60] hidden h-full w-80 translate-x-full transform overflow-y-auto bg-gradient-to-b from-white to-gray-50 shadow-2xl transition-all duration-300 hs-overlay-open:translate-x-0 dark:from-black dark:to-gray-900 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-primary/30 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar]:w-2" role="dialog" aria-label="Mobile navigation menu" aria-modal="true">
+
+            <!-- Backdrop Overlay Effect -->
+            <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-transparent to-primary/5"></div>
+
+            <div class="flex h-full flex-col justify-between gap-6 p-6">
+                <!-- Header Section -->
+                <div class="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-gray-800">
+                    <!-- Mobile Logo -->
+                    <a href="index.html" class="group inline-flex items-center gap-2 text-2xl font-semibold text-dark transition-all hover:scale-105 dark:text-white" aria-label="Ayush Chauhan - Home">
+                        <div class="rounded-lg bg-primary/10 p-2 transition-all group-hover:bg-primary/20 group-hover:rotate-6">
+                            <img src="/assets/img/favicon.svg" alt="Ayush Chauhan Logo" class="h-8 w-8" width="32" height="32" />
+                        </div>
+                        <span class="text-lg">Ayush<span class="text-primary">Chauhan</span></span>
                     </a>
+
+                    <!-- Close Button - Enhanced -->
+                    <button type="button" class="group inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 text-gray-800 transition-all hover:bg-primary hover:text-white hover:rotate-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:bg-gray-800 dark:text-white dark:hover:bg-primary dark:focus:ring-offset-black" data-hs-overlay="#mobile-menu" aria-label="Close menu">
+                        <svg class="h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
 
-                <ul class="mt-4 flex flex-1 flex-col gap-2">
-                    <li class="group/menu-item active">
-                        <a href="index.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-                                <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
-                                <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
-                            </svg>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="group/menu-item ">
-                        <a href="about.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-                                <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                                <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />
-                                <path d="M5.5 16.708v-.041a3.333 3.333 0 0 1 3.333-3.334h3.334a3.333 3.333 0 0 1 3.333 3.334v.041" />
-                            </svg>
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <!-- <li class="group/menu-item ">
-				<a
-					href="services.html"
-					class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 20 20"
-						fill="none"
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="1.2"
-						class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-						<path
-							d="M10.5 3.333 3.833 6.667 10.5 10l6.667-3.333L10.5 3.333ZM3.833 10l6.667 3.333L17.167 10M3.833 13.333l6.667 3.334 6.667-3.334" />
-					</svg>
-					<span>Services</span>
-				</a>
-			</li> -->
-                    <li class="group/menu-item ">
-                        <a href="Portfolio.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-                                <path d="m3.503 5.998 5.949-2.591a.8.8 0 0 1 1.058.439l4.103 9.918a.834.834 0 0 1-.428 1.087l-5.948 2.59a.8.8 0 0 1-1.059-.438l-4.103-9.92a.833.833 0 0 1 .428-1.085ZM13 3.333h.833a.833.833 0 0 1 .834.834v2.916M17.167 5c.22.093.433.18.64.263a.833.833 0 0 1 .442 1.092l-1.915 4.478" />
-                            </svg>
-                            <span>Works</span>
-                        </a>
-                    </li>
-                    <li class="group/menu-item ">
-                        <a href="blog.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-                                <path d="m14.667 9.167 1.25-1.25a2.357 2.357 0 1 0-3.333-3.334l-8.75 8.75v3.334h3.333L8.834 15m2.916-9.583 3.333 3.333m.417 9.583 2.792-2.736a1.785 1.785 0 0 0 .004-2.56 1.87 1.87 0 0 0-2.608-.005l-.186.184-.186-.184a1.869 1.869 0 0 0-2.607-.005 1.787 1.787 0 0 0-.005 2.56l2.796 2.746Z" />
-                            </svg>
-                            <span>Blog</span>
-                        </a>
-                    </li>
-                    <li class="group/menu-item ">
-                        <a href="contact.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
-                                <path d="M6.667 7.5h6.666m-6.666 3.333h5M15 3.333a2.5 2.5 0 0 1 2.5 2.5V12.5A2.5 2.5 0 0 1 15 15h-4.167l-4.166 2.5V15H5a2.5 2.5 0 0 1-2.5-2.5V5.833a2.5 2.5 0 0 1 2.5-2.5h10Z" />
-                            </svg>
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
+                <!-- Navigation Links - Enhanced -->
+                <nav class="flex-1 space-y-1" role="menu">
+                    <p class="mb-3 px-3 text-xs font-semibold uppercase tracking-wider text-muted/70 dark:text-light/50">Navigation</p>
 
-                <div class="flex flex-col gap-3">
-                    <button data-hs-theme-click-value="dark" class="hs-dark-mode flex w-full items-center justify-start gap-2 rounded-lg px-4 py-2 text-center text-sm text-muted transition hover:bg-light hs-dark-mode-active:hidden dark:hover:bg-dark dark:hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
-                            <path d="M11.8 3a8.656 8.656 0 0 0-4.523 1.28A8.918 8.918 0 0 0 4.04 7.756a9.167 9.167 0 0 0 .44 9.24 8.863 8.863 0 0 0 3.553 3.137 8.633 8.633 0 0 0 4.624.824 8.69 8.69 0 0 0 4.381-1.723 8.973 8.973 0 0 0 2.892-3.78c.3-.738-.419-1.48-1.142-1.179a5.604 5.604 0 0 1-3.892.15 5.74 5.74 0 0 1-3.083-2.431 5.956 5.956 0 0 1-.848-3.886c.17-1.357.8-2.61 1.78-3.541l.069-.072c.485-.567.099-1.488-.668-1.488h-.234l-.06-.005L11.8 3Z" />
+                    <ul class="space-y-1" role="menu">
+                        <li class="group/menu-item active" role="none">
+                            <a href="index.html" role="menuitem" class="group relative inline-flex w-full items-center gap-3 overflow-hidden rounded-xl px-4 py-3 text-base font-medium text-muted transition-all hover:bg-white hover:pl-5 hover:text-dark hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-gradient-to-r group-[.active]/menu-item:from-primary/10 group-[.active]/menu-item:to-primary/5 group-[.active]/menu-item:pl-5 group-[.active]/menu-item:text-[#0E1018] group-[.active]/menu-item:shadow-sm dark:hover:bg-gray-800 dark:hover:text-white dark:group-[.active]/menu-item:from-primary/20 dark:group-[.active]/menu-item:to-primary/10 dark:group-[.active]/menu-item:text-[#0E1018] dark:focus:ring-offset-black" aria-current="page">
+                                <!-- Active Indicator -->
+                                <span class="absolute left-0 top-0 h-full w-1 scale-y-0 rounded-r-full bg-primary transition-transform group-[.active]/menu-item:scale-y-100"></span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6 text-[#8991A7] transition-all group-hover:scale-110 group-hover:text-primary group-[.active]/menu-item:text-primary dark:group-hover:text-primary" aria-hidden="true">
+                                    <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
+                                    <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="group/menu-item " role="none">
+                            <a href="about.html" role="menuitem" class="group relative inline-flex w-full items-center gap-3 overflow-hidden rounded-xl px-4 py-3 text-base font-medium text-muted transition-all hover:bg-white hover:pl-5 hover:text-dark hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-gradient-to-r group-[.active]/menu-item:from-primary/10 group-[.active]/menu-item:to-primary/5 group-[.active]/menu-item:pl-5 group-[.active]/menu-item:text-[#0E1018] group-[.active]/menu-item:shadow-sm dark:hover:bg-gray-800 dark:hover:text-white dark:group-[.active]/menu-item:from-primary/20 dark:group-[.active]/menu-item:to-primary/10 dark:group-[.active]/menu-item:text-[#0E1018] dark:focus:ring-offset-black" aria-current="">
+                                <span class="absolute left-0 top-0 h-full w-1 scale-y-0 rounded-r-full bg-primary transition-transform group-[.active]/menu-item:scale-y-100"></span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6 text-[#8991A7] transition-all group-hover:scale-110 group-hover:text-primary group-[.active]/menu-item:text-primary dark:group-hover:text-primary" aria-hidden="true">
+                                    <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                    <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />
+                                    <path d="M5.5 16.708v-.041a3.333 3.333 0 0 1 3.333-3.334h3.334a3.333 3.333 0 0 1 3.333 3.334v.041" />
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+
+                        <li class="group/menu-item " role="none">
+                            <a href="portfolio.html" role="menuitem" class="group relative inline-flex w-full items-center gap-3 overflow-hidden rounded-xl px-4 py-3 text-base font-medium text-muted transition-all hover:bg-white hover:pl-5 hover:text-dark hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-gradient-to-r group-[.active]/menu-item:from-primary/10 group-[.active]/menu-item:to-primary/5 group-[.active]/menu-item:pl-5 group-[.active]/menu-item:text-[#0E1018] group-[.active]/menu-item:shadow-sm dark:hover:bg-gray-800 dark:hover:text-white dark:group-[.active]/menu-item:from-primary/20 dark:group-[.active]/menu-item:to-primary/10 dark:group-[.active]/menu-item:text-[#0E1018] dark:focus:ring-offset-black" aria-current="">
+                                <span class="absolute left-0 top-0 h-full w-1 scale-y-0 rounded-r-full bg-primary transition-transform group-[.active]/menu-item:scale-y-100"></span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6 text-[#8991A7] transition-all group-hover:scale-110 group-hover:text-primary group-[.active]/menu-item:text-primary dark:group-hover:text-primary" aria-hidden="true">
+                                    <path d="m3.503 5.998 5.949-2.591a.8.8 0 0 1 1.058.439l4.103 9.918a.834.834 0 0 1-.428 1.087l-5.948 2.59a.8.8 0 0 1-1.059-.438l-4.103-9.92a.833.833 0 0 1 .428-1.085ZM13 3.333h.833a.833.833 0 0 1 .834.834v2.916M17.167 5c.22.093.433.18.64.263a.833.833 0 0 1 .442 1.092l-1.915 4.478" />
+                                </svg>
+                                <span>My Work</span>
+                            </a>
+                        </li>
+
+                        <li class="group/menu-item " role="none">
+                            <a href="blog.html" role="menuitem" class="group relative inline-flex w-full items-center gap-3 overflow-hidden rounded-xl px-4 py-3 text-base font-medium text-muted transition-all hover:bg-white hover:pl-5 hover:text-dark hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-gradient-to-r group-[.active]/menu-item:from-primary/10 group-[.active]/menu-item:to-primary/5 group-[.active]/menu-item:pl-5 group-[.active]/menu-item:text-[#0E1018] group-[.active]/menu-item:shadow-sm dark:hover:bg-gray-800 dark:hover:text-white dark:group-[.active]/menu-item:from-primary/20 dark:group-[.active]/menu-item:to-primary/10 dark:group-[.active]/menu-item:text-[#0E1018] dark:focus:ring-offset-black" aria-current="">
+                                <span class="absolute left-0 top-0 h-full w-1 scale-y-0 rounded-r-full bg-primary transition-transform group-[.active]/menu-item:scale-y-100"></span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6 text-[#8991A7] transition-all group-hover:scale-110 group-hover:text-primary group-[.active]/menu-item:text-primary dark:group-hover:text-primary" aria-hidden="true">
+                                    <path d="m14.667 9.167 1.25-1.25a2.357 2.357 0 1 0-3.333-3.334l-8.75 8.75v3.334h3.333L8.834 15m2.916-9.583 3.333 3.333m.417 9.583 2.792-2.736a1.785 1.785 0 0 0 .004-2.56 1.87 1.87 0 0 0-2.608-.005l-.186.184-.186-.184a1.869 1.869 0 0 0-2.607-.005 1.787 1.787 0 0 0-.005 2.56l2.796 2.746Z" />
+                                </svg>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+
+                        <li class="group/menu-item " role="none">
+                            <a href="contact.html" role="menuitem" class="group relative inline-flex w-full items-center gap-3 overflow-hidden rounded-xl px-4 py-3 text-base font-medium text-muted transition-all hover:bg-white hover:pl-5 hover:text-dark hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 group-[.active]/menu-item:bg-gradient-to-r group-[.active]/menu-item:from-primary/10 group-[.active]/menu-item:to-primary/5 group-[.active]/menu-item:pl-5 group-[.active]/menu-item:text-[#0E1018] group-[.active]/menu-item:shadow-sm dark:hover:bg-gray-800 dark:hover:text-white dark:group-[.active]/menu-item:from-primary/20 dark:group-[.active]/menu-item:to-primary/10 dark:group-[.active]/menu-item:text-[#0E1018] dark:focus:ring-offset-black" aria-current="">
+                                <span class="absolute left-0 top-0 h-full w-1 scale-y-0 rounded-r-full bg-primary transition-transform group-[.active]/menu-item:scale-y-100"></span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6 text-[#8991A7] transition-all group-hover:scale-110 group-hover:text-primary group-[.active]/menu-item:text-primary dark:group-hover:text-primary" aria-hidden="true">
+                                    <path d="M6.667 7.5h6.666m-6.666 3.333h5M15 3.333a2.5 2.5 0 0 1 2.5 2.5V12.5A2.5 2.5 0 0 1 15 15h-4.167l-4.166 2.5V15H5a2.5 2.5 0 0 1-2.5-2.5V5.833a2.5 2.5 0 0 1 2.5-2.5h10Z" />
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Footer Section - Enhanced -->
+                <div class="space-y-3 border-t border-gray-200 pt-4 dark:border-gray-800">
+                    <!-- Theme Toggle - Secondary Button Style -->
+                    <button data-hs-theme-click-value="dark" class="hs-dark-mode btn-secondary group w-full justify-center hs-dark-mode-active:hidden" aria-label="Switch to dark mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true">
+                            <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Z" />
                         </svg>
-
                         <span>Change appearance</span>
                     </button>
 
-                    <button data-hs-theme-click-value="light" class="hs-dark-mode hidden w-full items-center justify-start gap-2 rounded-lg px-4 py-2 text-center text-sm text-muted transition hover:bg-light hs-dark-mode-active:flex dark:hover:bg-dark dark:hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
-                            <path d="M10 15.833a.833.833 0 0 1 .828.736l.005.098v.833a.833.833 0 0 1-1.66.097l-.006-.097v-.833a.833.833 0 0 1 .833-.834Zm5.26-1.741.08.069.582.583a.833.833 0 0 1-1.1 1.248l-.078-.07-.583-.583a.833.833 0 0 1 1.015-1.306l.085.059Zm-9.42.068a.833.833 0 0 1 .068 1.1l-.069.08-.583.582a.833.833 0 0 1-1.248-1.1l.07-.078.583-.583a.833.833 0 0 1 1.178 0ZM3.333 9.167a.833.833 0 0 1 .098 1.66l-.098.006H2.5a.833.833 0 0 1-.098-1.66l.098-.006h.833Zm14.167 0a.833.833 0 0 1 .098 1.66l-.098.006h-.833a.833.833 0 0 1-.098-1.66l.098-.006h.833ZM5.178 4.008l.078.07.583.583a.833.833 0 0 1-1.1 1.247l-.078-.069-.583-.583A.833.833 0 0 1 5.092 3.95l.086.058Zm10.744.069a.833.833 0 0 1 .07 1.1l-.07.079-.583.583a.833.833 0 0 1-1.247-1.1l.069-.078.583-.584a.833.833 0 0 1 1.178 0ZM10 1.667a.833.833 0 0 1 .828.736l.005.097v.833a.833.833 0 0 1-1.66.098l-.006-.098V2.5A.833.833 0 0 1 10 1.667Zm0 4.166a4.167 4.167 0 1 1-4.163 4.348L5.833 10l.004-.18A4.167 4.167 0 0 1 10 5.832Z" />
+                    <button data-hs-theme-click-value="light" class="hs-dark-mode btn-secondary group hidden w-full justify-center hs-dark-mode-active:flex" aria-label="Switch to light mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true">
+                            <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Zm0-8c-1.65,0-3,1.35-3,3s1.35,3,3,3,3-1.35,3-3-1.35-3-3-3Zm0-4c-.55,0-1-.45-1-1V2c0-.55,.45-1,1-1s1,.45,1,1v2c0,.55-.45,1-1,1Zm0,18c-.55,0-1-.45-1-1v-2c0-.55,.45-1,1-1s1,.45,1,1v2c0,.55-.45,1-1,1ZM5.99,7.58c-.39-.39-.39-1.02,0-1.41l1.41-1.41c.39-.39,1.02-.39,1.41,0,.39,.39,.39,1.02,0,1.41l-1.41,1.41c-.39,.39-1.02,.39-1.41,0Zm12.02,12.02c-.39-.39-.39-1.02,0-1.41l1.41-1.41c.39-.39,1.02-.39,1.41,0,.39,.39,.39,1.02,0,1.41l-1.41,1.41c-.39,.39-1.02,.39-1.41,0ZM22,13h-2c-.55,0-1-.45-1-1s.45-1,1-1h2c.55,0,1,.45,1,1s-.45,1-1,1ZM4,13H2c-.55,0-1-.45-1-1s.45-1,1-1h2c.55,0,1,.45,1,1s-.45,1-1,1Zm14.01,6.58l-1.41-1.41c-.39-.39-.39-1.02,0-1.41,.39-.39,1.02-.39,1.41,0l1.41,1.41c.39,.39,.39,1.02,0,1.41-.39,.39-1.02,.39-1.41,0ZM5.99,7.58l-1.41-1.41c-.39-.39-.39-1.02,0-1.41,.39-.39,1.02-.39,1.41,0l1.41,1.41c.39,.39,.39,1.02,0,1.41-.39,.39-1.02,.39-1.41,0Z" />
                         </svg>
-
                         <span>Change appearance</span>
                     </button>
 
-                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
-                        <span>Let's Talk</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
+                    <!-- CTA Button - Premium Style -->
+                    <a href="contact.html" class="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-primary to-primary/80 px-6 py-4 text-center text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 active:scale-[0.98] dark:focus:ring-offset-black">
+                        <!-- Shine Effect -->
+                        <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
+
+                        <span class="relative">Let's Talk</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="relative h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true">
                             <path d="M17.5 11.667v-5h-5" />
                             <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
                         </svg>
@@ -257,6 +259,9 @@
                 </div>
             </div>
         </div>
+
+
+
 
 
         <main class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
@@ -267,79 +272,96 @@
                     <html lang="en">
 
                     <body>
-                        <!-- Intro -->
+                        <!-- Profile Card -->
                         <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
-                            <div class="aspect-6/4 overflow-hidden rounded-lg bg-light pt-4 text-center dark:bg-dark-2">
-                                <img src="assets/img/profile.png" alt="" class="inline-block scale-120 " />
+                            <!-- Profile Image -->
+                            <div class="relative aspect-6/4 overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 pt-4 text-center dark:from-primary/10 dark:via-primary/20 dark:to-primary/10">
+                                <img src="assets/img/profile.png" alt="Ayush Chauhan Profile" class="inline-block scale-120 transition-transform duration-500 hover:scale-125" />
                             </div>
 
                             <div class="mt-6">
-                                <h3 class="text-4xl font-semibold dark:text-light">Ayush Chauhan 👋</h3>
-                                <p class="mt-4 text-muted dark:text-light/100">
+                                <!-- Name with Wave Animation -->
+                                <h3 class="text-3xl font-bold dark:text-light md:text-4xl">
+                                    Ayush Chauhan
+                                    <span class="inline-block animate-wave origin-[70%_70%]">👋</span>
+                                </h3>
+
+                                <!-- Description -->
+                                <p class="mt-4 text-base leading-relaxed text-muted dark:text-light/70">
                                     A Passionate
-                                    <span class="font-semibold text-dark dark:text-white">
-								Product Designer
-							</span>
+                                    <span class="font-semibold text-dark dark:text-white">Product Designer</span>
                                     🖥️ &
-                                    <span class="font-semibold text-dark dark:text-white">
-								Marketing Strategist
-							</span>
+                                    <span class="font-semibold text-dark dark:text-white">Marketing Strategist</span>
                                     having
-                                    <span class="font-semibold text-dark dark:text-white"> 4+ years </span>
+                                    <span class="font-semibold text-dark dark:text-white">4+ years</span>
                                     of Experience. Blending design & strategy to craft digital experiences people love ❤️
                                 </p>
 
-                                <!-- CTA buttons -->
-                                <div class="mt-8 flex  justify-between text-sm md:text-lg">
-                                    <a href="#" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-secondary px-6 py-4 font-medium text-white transition hover:bg-blue-600 focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
+                                <!-- CTA Buttons (NEW: Clean with custom classes) -->
+                                <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+                                    <!-- Primary CTA -->
+                                    <a href="#contact" class="btn-primary-lg group flex-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5 transition-transform group-hover:rotate-12">
                                             <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Zm10 3a2 2 0 0 1 2 2m-2-6a6 6 0 0 1 6 6" />
                                         </svg>
                                         <span>Book A Call</span>
                                     </a>
-                                    <button type="button" data-clipboard-text="chauhan118ayush@gmail.com" data-clipboard-action="copy" data-clipboard-success-text="Copied to clipboard" class="js-clipboard hs-tooltip inline-flex items-center gap-x-2 rounded-lg border border-light bg-transparent px-6 py-4 font-medium text-dark transition [--trigger:focus] hover:bg-light focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-light/70 dark:hover:bg-dark dark:hover:text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
+
+                                    <!-- Secondary CTA -->
+                                    <button type="button" data-clipboard-text="chauhan118ayush@gmail.com" data-clipboard-action="copy" data-clipboard-success-text="Copied to clipboard" class="btn-secondary-lg js-clipboard hs-tooltip group flex-1 [--trigger:focus]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5 transition-transform group-hover:scale-110">
                                             <path d="M8 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-8Z" />
                                             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
                                         </svg>
                                         <span>Copy Email</span>
 
-                                        <span
-									class="hs-tooltip-content invisible z-10 hidden rounded-lg bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity hs-tooltip-shown:visible hs-tooltip-shown:opacity-100 dark:bg-slate-700"
-									role="tooltip">
-									Copied to clipboard
-								</span>
+                                        <span class="hs-tooltip-content invisible z-10 hidden rounded-lg bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity hs-tooltip-shown:visible hs-tooltip-shown:opacity-100 dark:bg-slate-700"
+                      role="tooltip">
+                    Copied to clipboard
+                </span>
                                     </button>
                                 </div>
 
-                                <!-- Social -->
-                                <div class="mt-8 flex flex-wrap items-center gap-2">
-                                    <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10Z" />
+                                <!-- Social Icons (Clean with btn-icon class) -->
+                                <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/in/ayushchauhanwizion" class="btn-icon group" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 transition-none">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                         </svg>
                                     </a>
-                                    <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                            <path d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.74 3.74 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.862 2.862 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.99 9.99 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903l-.002-.001Z" />
+
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/ayushchauhan.raw" class="btn-icon group" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 transition-none">
+                                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                         </svg>
                                     </a>
-                                    <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+
+                                    <!-- GitHub -->
+                                    <a href="https://github.com/Ayushkumarchauhan" class="btn-icon group" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 transition-none">
                                             <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10Z" />
                                         </svg>
                                     </a>
-                                    <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+
+                                    <!-- YouTube -->
+                                    <a href="https://www.youtube.com/@ayushchauhan" class="btn-icon group" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 transition-none">
                                             <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022ZM10 15.5l6-3.5-6-3.5v7Z" />
                                         </svg>
                                     </a>
                                 </div>
+
+
+
                             </div>
                         </div>
+
                     </body>
 
                     </html>
+
 
                 </div>
             </div>
@@ -359,7 +381,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/google.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Maxlence Logo.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -377,7 +399,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/meta.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Samiah logo.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -393,7 +415,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/adobe.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Kofuku Idea labs.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -409,7 +431,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/adobe.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/ITarch.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -421,14 +443,14 @@
                             </div>
                         </div>
 
-                        <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]">
+                        <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]" aria-hidden="true">
                             <div class="flex flex-col gap-1 md:flex-row md:gap-10">
                                 <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
                                     2025 - pres
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/google.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Maxlence Logo.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -446,7 +468,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/meta.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Samiah logo.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -462,7 +484,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/adobe.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/Kofuku Idea labs.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -478,7 +500,7 @@
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/adobe.svg" alt="" class="h-5 w-5" />
+                                        <img src="assets/img/ITarch.svg" alt="" class="h-5 w-5" />
                                     </div>
                                     <div class="">
                                         <h6 class="text-base font-semibold text-dark dark:text-light/70">
@@ -489,7 +511,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]">
+                    </div>
+                </div>
+
+                <!-- <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]">
 							<div class="flex flex-col gap-1 md:flex-row md:gap-10">
 								<p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
 									2021 - 2023
@@ -561,8 +586,7 @@
 								</div>
 							</div>
 						</div> -->
-                    </div>
-                </div>
+
 
                 <!-- Expertise -->
                 <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
@@ -621,7 +645,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Projects -->
             <!-- Projects -->
             <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
                 <div class="flex flex-wrap items-center justify-between gap-2">
@@ -635,42 +659,154 @@
                 </div>
 
                 <div class="mt-6 space-y-6">
-                    <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-                        <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-                            <img src="assets/img/project-1.png" alt="" class="h-full w-full rounded-t-lg object-cover object-top transition" />
+                    <!-- PROJECT 1 -->
+                    <div class="group relative overflow-hidden rounded-xl aspect-6/4 shadow-md hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500">
+                        <!-- Full Cover Image with Zoom -->
+                        <img src="assets/img/project-1.png" alt="FlowSaaS Dashboard" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
 
-                            <a href="assets/img/project-1.png" data-gall="project-gallry-1" class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                    <path d="M10 4.167v11.666M4.167 10h11.666" />
+                        <!-- Dark Gradient Overlay (Always Visible, Intensifies on Hover) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 group-hover:via-black/30 transition-all duration-500"></div>
+
+                        <!-- Hover Icon (Plus) -->
+                        <a href="assets/img/project-1.png" data-gall="project-gallry-1" class="project-gallery-link absolute left-1/2 top-1/2 z-20 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-xl transition-all duration-300 lg:invisible lg:scale-0 lg:opacity-0 lg:group-hover:visible lg:group-hover:scale-100 lg:group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6">
+                                <path d="M10 4.167v11.666M4.167 10h11.666" />
+                            </svg>
+                        </a>
+
+                        <!-- Bottom Content (Tag + Title) -->
+                        <div class="absolute inset-x-0 bottom-0 z-10 p-5 transition-all duration-300 group-hover:pb-6">
+                            <!-- Tag -->
+                            <div class="mb-3 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+                            <path d="M15.98 1.804a1 1 0 00-1.96 0l-.24 1.192a1 1 0 01-.784.785l-1.192.238a1 1 0 000 1.962l1.192.238a1 1 0 01.785.785l.238 1.192a1 1 0 001.962 0l.238-1.192a1 1 0 01.785-.785l1.192-.238a1 1 0 000-1.962l-1.192-.238a1 1 0 01-.785-.785l-.238-1.192zM6.949 5.684a1 1 0 00-1.898 0l-.683 2.051a1 1 0 01-.633.633l-2.051.683a1 1 0 000 1.898l2.051.684a1 1 0 01.633.632l.683 2.051a1 1 0 001.898 0l.683-2.051a1 1 0 01.633-.633l2.051-.683a1 1 0 000-1.898l-2.051-.683a1 1 0 01-.633-.633L6.95 5.684zM13.949 13.684a1 1 0 00-1.898 0l-.184.551a1 1 0 01-.632.633l-.551.183a1 1 0 000 1.898l.551.183a1 1 0 01.633.633l.183.551a1 1 0 001.898 0l.184-.551a1 1 0 01.632-.633l.551-.183a1 1 0 000-1.898l-.551-.184a1 1 0 01-.633-.632l-.183-.551z" />
+                        </svg>
+                        Product Design
+                    </span>
+                            </div>
+
+                            <!-- Clickable Title with Arrow -->
+                            <a href="project-details.html?id=flowsaas" class="group/link flex items-center gap-2 text-lg font-bold text-white transition-all duration-300 hover:gap-3 hover:text-primary">
+                                <span class="leading-tight">FlowSaaS Dashboard</span>
+                                <!-- Arrow Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="h-5 w-5 flex-shrink-0 transition-transform duration-300 group-hover/link:translate-x-1">
+                                    <path d="m7 4 6 6-6 6" />
                                 </svg>
                             </a>
-                        </div>
 
-                        <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-                            <span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-								Product Design 
-							</span>
+                            <!-- Subtle Divider Line (Appears on Hover) -->
+                            <div class="mt-3 h-0.5 w-0 bg-primary/50 transition-all duration-500 group-hover:w-16"></div>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-                        <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-                            <img src="assets/img/project-2.png" alt="" class="h-full w-full rounded-t-lg object-cover object-top transition" />
 
-                            <a href="assets/img/project-2.png" data-gall="project-gallery-2" class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                    <path d="M10 4.167v11.666M4.167 10h11.666" />
+                    <!-- PROJECT 2 -->
+                    <div class="group relative overflow-hidden rounded-xl aspect-6/4 shadow-md hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500">
+                        <!-- Full Cover Image with Zoom -->
+                        <img src="assets/img/project-2.png" alt="Bowgle App" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+                        <!-- Dark Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 group-hover:via-black/30 transition-all duration-500"></div>
+
+                        <!-- Hover Icon (Plus) -->
+                        <a href="assets/img/project-2.png" data-gall="project-gallery-2" class="project-gallery-link absolute left-1/2 top-1/2 z-20 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-xl transition-all duration-300 lg:invisible lg:scale-0 lg:opacity-0 lg:group-hover:visible lg:group-hover:scale-100 lg:group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6">
+                                <path d="M10 4.167v11.666M4.167 10h11.666" />
+                            </svg>
+                        </a>
+
+                        <!-- Bottom Content (Tag + Title) -->
+                        <div class="absolute inset-x-0 bottom-0 z-10 p-5 transition-all duration-300 group-hover:pb-6">
+                            <!-- Tag -->
+                            <div class="mb-3 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+                            <path d="M15.98 1.804a1 1 0 00-1.96 0l-.24 1.192a1 1 0 01-.784.785l-1.192.238a1 1 0 000 1.962l1.192.238a1 1 0 01.785.785l.238 1.192a1 1 0 001.962 0l.238-1.192a1 1 0 01.785-.785l1.192-.238a1 1 0 000-1.962l-1.192-.238a1 1 0 01-.785-.785l-.238-1.192zM6.949 5.684a1 1 0 00-1.898 0l-.683 2.051a1 1 0 01-.633.633l-2.051.683a1 1 0 000 1.898l2.051.684a1 1 0 01.633.632l.683 2.051a1 1 0 001.898 0l.683-2.051a1 1 0 01.633-.633l2.051-.683a1 1 0 000-1.898l-2.051-.683a1 1 0 01-.633-.633L6.95 5.684zM13.949 13.684a1 1 0 00-1.898 0l-.184.551a1 1 0 01-.632.633l-.551.183a1 1 0 000 1.898l.551.183a1 1 0 01.633.633l.183.551a1 1 0 001.898 0l.184-.551a1 1 0 01.632-.633l.551-.183a1 1 0 000-1.898l-.551-.184a1 1 0 01-.633-.632l-.183-.551z" />
+                        </svg>
+                        Product Design
+                    </span>
+                            </div>
+
+                            <!-- Clickable Title with Arrow -->
+                            <a href="project-details.html?id=bowgle" class="group/link flex items-center gap-2 text-lg font-bold text-white transition-all duration-300 hover:gap-3 hover:text-primary">
+                                <span class="leading-tight">Bowgle - Pet Adoption App</span>
+                                <!-- Arrow Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="h-5 w-5 flex-shrink-0 transition-transform duration-300 group-hover/link:translate-x-1">
+                                    <path d="m7 4 6 6-6 6" />
                                 </svg>
                             </a>
-                        </div>
 
-                        <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-                            <span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-								Product Design
-							</span>
+                            <!-- Subtle Divider Line (Appears on Hover) -->
+                            <div class="mt-3 h-0.5 w-0 bg-primary/50 transition-all duration-500 group-hover:w-16"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- "Projects
+			<div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
+				<div class="flex flex-wrap items-center justify-between gap-2">
+					<h3 class="text-2xl font-semibold dark:text-light">Recent Projects</h3>
+					<a href="Portfolio.html"
+						class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
+						<span>All Projects</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
+							<path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="mt-6 space-y-6">
+					<div
+						class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
+						<div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
+							<img src="assets/img/project-1.png" alt=""
+								class="h-full w-full rounded-t-lg object-cover object-top transition" />
+
+							<a href="assets/img/project-1.png" data-gall="project-gallry-1"
+								class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+									stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="1.5" class="h-6 w-6">
+									<path d="M10 4.167v11.666M4.167 10h11.666" />    
+								</svg>
+							</a>
+						</div>
+
+						<div
+							class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
+							<span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
+								Product Design 
+							</span>
+						</div>
+					</div>
+					<div
+						class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
+						<div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
+							<img src="assets/img/project-2.png" alt=""
+								class="h-full w-full rounded-t-lg object-cover object-top transition" />
+
+							<a href="assets/img/project-2.png" data-gall="project-gallery-2"
+								class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+									stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="1.5" class="h-6 w-6">
+									<path d="M10 4.167v11.666M4.167 10h11.666" />
+								</svg>
+							</a>
+						</div>
+
+						<div
+							class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
+							<span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
+								Product Design
+							</span>
+						</div>
+					</div>
+				</div>
+			</div> -->
 
             <!-- Services -->
             <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark lg:col-span-2">
