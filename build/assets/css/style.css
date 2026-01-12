@@ -2239,6 +2239,9 @@ html::-webkit-scrollbar,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-none{
+  transition-property: none;
+}
 .transition-opacity{
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2248,9 +2251,6 @@ html::-webkit-scrollbar,
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-.transition-none{
-  transition-property: none;
 }
 .duration-300{
   transition-duration: 300ms;
@@ -2688,16 +2688,6 @@ html::-webkit-scrollbar,
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.hover\:shadow-\[0_0_20px_rgba\(255\2c 215\2c 66\2c 0\.4\)\]:hover{
-  --tw-shadow: 0 0 20px rgba(255,215,66,0.4);
-  --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:shadow-\[0_0_20px_rgba\(255\2c _215\2c _66\2c _0\.4\)\]:hover{
-  --tw-shadow: 0 0 20px rgba(255, 215, 66, 0.4);
-  --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .hover\:shadow-primary\/20:hover{
   --tw-shadow-color: rgb(255 215 66 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
@@ -2776,10 +2766,6 @@ html::-webkit-scrollbar,
 }
 .group:hover .group-hover\:translate-x-\[200\%\]{
   --tw-translate-x: 200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group:hover .group-hover\:translate-y-1{
-  --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:rotate-12{
